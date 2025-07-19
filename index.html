@@ -7,9 +7,24 @@
 </head>
 <body>
      <p id="particlesObtained">0 Particles</p> <br>
-    <button onclick="getParticle()">Get particles</button> <br> <br>
-    <button onclick="buyParticlesPerClick()" id="perClickUpgrade">Upgrade particle Generation (Currently Level 1) Cost: 10 Gold </button>
+     <div id="MainMenu">
+          <button onclick="getParticle()">Get particles</button> <br> <br>
+          <button onclick="buyParticlesPerClick()" id="perClickUpgrade">Upgrade Particle Generation (Currently Level 1) Cost: 10 Gold </button>
+     </div>
+
+     <div style="display: flex; align-items: center; gap: 8px;" id="Settings">
+          <p style="margin: 0;">Change notation type. Current:</p>
+          <button id="notationButton" onclick="changeNotation()"></button>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="navigateButtons">
+      <button onclick="tab('MainMenu')">Go to the Main Menu.</button>
+      <button onclick="tab('Settings')">Go to Settings tab.</button>
+    </div>
 
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
 </body>
 </html>
