@@ -8,20 +8,33 @@
 <body>
      <p id="particlesObtained">0 Particles</p> <br>
      <div id="MainMenu">
-          <button onclick="getParticle()">Get particles</button> <br> <br>
-          <button onclick="buyParticlesPerClick()" id="perClickUpgrade">Upgrade Particle Generation (Currently Level 1) Cost: 10 Gold </button>
+          <button onclick="getParticle()" style="font-family: sans-serif;" id="getParticlesButton">Get particles</button> <br> <br> <br>
+          <button onclick="buyParticlesPerClick()" id="perClickUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation (Currently Level 0) Cost: 10 Particles   Boost +0</button> <br> <br>
+          <button onclick="buyParticlesPerSecond()" id="perSecondUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation Speed (Currently Level 0) Cost: 1000 Particles   Boost -0</button>
      </div>
 
-     <div style="display: flex; align-items: center; gap: 8px;" id="Settings">
-          <p style="margin: 0;">Change notation type. Current:</p>
-          <button id="notationButton" onclick="changeNotation()"></button>
+     <div id="Settings">
+          <div style="display: flex; align-items: center; gap: 8px; font-family: sans-serif;" >
+               <p style="margin: 0;">Change notation type. Current:</p>
+               <button id="notationButton" onclick="changeNotation()">Notation</button>
+          </div>
+
+          <div style=" display: flex; margin-top: 16px; font-family: sans-serif;">
+               <p style="margin: 0; font-family: sans-serif;">Change Save Time. Current Save Time:</p>
+               <p style="margin: 0; font-family: sans-serif;" id="updateSaveTime">15</p>
+               <input type="range" min="10" max="60" value="15" class="glow-slider" id="saveTime" oninput="updateSliderValue()">
+          </div>
      </div>
+
+
+
+
      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-     <br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br>
 
     <div id="navigateButtons">
-      <button onclick="tab('MainMenu')">Go to the Main Menu.</button>
-      <button onclick="tab('Settings')">Go to Settings tab.</button>
+      <button onclick="tab('MainMenu')" style="font-family: sans-serif;">Go to the Main Menu.</button>
+      <button onclick="tab('Settings')" style="font-family: sans-serif;">Go to Settings tab.</button>
     </div>
 
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
