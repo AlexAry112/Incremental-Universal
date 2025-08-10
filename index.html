@@ -11,6 +11,12 @@
           <button onclick="getParticle()" style="font-family: sans-serif;" id="getParticlesButton">Get particles</button> <br> <br> <br>
           <button onclick="buyParticlesPerClick()" id="perClickUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation (Currently Level 0) Cost: 10 Particles   Boost +0</button> <br> <br>
           <button onclick="buyParticlesPerSecond()" id="perSecondUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation Speed (Currently Level 0) Cost: 1000 Particles   Boost -0</button>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div style="display: flex;">
+               <button onclick="decentralization()" style="font-family: sans-serif;">Particle decentralization</button>
+               <p style="font-family: sans-serif;" id="decentralizationText">(0 decentralizations) Cost: 100000 Particles     Boost x1</p>
+          </div>
+          
      </div>
 
      <div id="Settings">
@@ -24,19 +30,19 @@
                <p style="margin: 0; font-family: sans-serif;" id="updateSaveTime">15</p>
                <input type="range" min="10" max="60" value="15" class="glow-slider" id="saveTime" oninput="updateSliderValue()">
           </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      </div>
 
 
 
 
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-     <br><br><br><br><br><br><br><br><br>
+     <br><br><br><br>
 
     <div id="navigateButtons">
       <button onclick="tab('MainMenu')" style="font-family: sans-serif;">Go to the Main Menu.</button>
       <button onclick="tab('Settings')" style="font-family: sans-serif;">Go to Settings tab.</button>
     </div>
-
+    <script src="break_eternity.js"></script>
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
     <link rel="stylesheet" href="styles.css">
 </body>
