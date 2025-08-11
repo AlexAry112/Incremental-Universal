@@ -18,7 +18,7 @@ var gameData = {
   particlesPerClick: new Decimal(1),
   particlesPerClickCost: new Decimal(10),
   particlesPerClickLevel: 0,
-  update: "0.0.4",
+  update: "0.0.45",
   lastTick: Date.now(),
   type: "scientific",
   SaveTime: 15,
@@ -27,7 +27,8 @@ var gameData = {
   particlesPerSecondLevel: 0,
   decentralizations: new Decimal(0),
   decentralizationCost: new Decimal(100000),
-  _lastSaveTimestamp: Date.now()
+  _lastSaveTimestamp: Date.now(),
+  
 };
 
 function format(numInput, type) {
@@ -84,7 +85,7 @@ function fullUpdate() {
   } else {
     safeSet(
       "perSecondUpgrade",
-      "Upgrade Particle Generation Speed (Currently Level MAX) Cost: MAX  Boost: -" +
+      "Upgrade Particle Generation Speed (Currently Level 9) Cost: MAX  Boost: -" +
         (gameData.particlesPerSecondLevel / 10)
     );
   }

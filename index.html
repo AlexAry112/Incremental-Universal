@@ -9,8 +9,16 @@
      <p id="particlesObtained">0 Particles</p> <br>
      <div id="MainMenu">
           <button onclick="getParticle()" style="font-family: sans-serif;" id="getParticlesButton">Get particles</button> <br> <br> <br>
-          <button onclick="buyParticlesPerClick()" id="perClickUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation (Currently Level 0) Cost: 10 Particles   Boost +0</button> <br> <br>
-          <button onclick="buyParticlesPerSecond()" id="perSecondUpgrade" style="font-family: sans-serif;">Upgrade Particle Generation Speed (Currently Level 0) Cost: 1000 Particles   Boost -0</button>
+          <div style="display: flex; gap: 100px" id="row1">
+               <div id="U1" style="display: flex; gap: 20px;">
+                    <button onclick="buyParticlesPerClick()"style="font-family: sans-serif; ">Upgrade Particle Generation</button>
+                    <p style="font-family: sans-serif; font-weight: bold;" id="perClickUpgrade">(Currently Level 0) Cost: 10 Particles   Boost +0</p>
+               </div>
+               <div id="U2" style="display: flex; gap: 20px;">
+                    <button onclick="buyParticlesPerSecond()"style="font-family: sans-serif;">Upgrade Particle Generation Speed</button>
+                    <p style="font-family: sans-serif; font-weight: bold;" id="perSecondUpgrade">(Currently Level 0) Cost: 1000 Particles   Boost -0</p>
+               </div>
+          </div>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           <div style="display: flex;">
                <button onclick="decentralization()" style="font-family: sans-serif;">Particle decentralization</button>
@@ -36,7 +44,7 @@
 
 
 
-     <br><br><br><br>
+     <br><br>
 
     <div id="navigateButtons">
       <button onclick="tab('MainMenu')" style="font-family: sans-serif;">Go to the Main Menu.</button>
